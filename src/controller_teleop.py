@@ -308,7 +308,7 @@ def telemetry_loop(data: dict, stop: threading.Event) -> None:
             sor = _session.get(
                 f"{MAV}/mavlink/vehicles/1/components/1/messages/SERVO_OUTPUT_RAW",
                 timeout=0.5).json()["message"]
-            # BlueROV2 Heavy: 6 vectored thrusters on servo1..servo6, raw PWM (neutral ~1500)
+            # BlueROV2 (standard configuration): 6 vectored thrusters on servo1..servo6, raw PWM (neutral ~1500)
             data["thr_pwm"] = [sor.get(f"servo{i}_raw", 1500) for i in range(1, 7)]
             ps = _session.get(
                 f"{MAV}/mavlink/vehicles/1/components/1/messages/POWER_STATUS",

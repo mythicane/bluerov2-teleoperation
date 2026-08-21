@@ -1,7 +1,7 @@
 import pyarrow.parquet as pq
 import sys
 
-path = sys.argv[1] if len(sys.argv) > 1 else 'grab red rod/data/chunk-000/episode_000000.parquet'
+path = sys.argv[1] if len(sys.argv) > 1 else 'data/grab red rod/data/chunk-000/episode_000000.parquet'
 t = pq.read_table(path)
 print('Schema:')
 print(t.schema)

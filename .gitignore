@@ -13,8 +13,8 @@ dagger_data/
 
 # Recorded episode data: keep the empty grab-*-rod folder skeletons (and
 # their .gitkeep files) checked in, but never commit actual recordings.
-grab */data/chunk-*/*.parquet
-grab */videos/**/*.mp4
-grab */meta/*.json
-grab */meta/*.parquet
-grab */meta/episodes/
+data/grab */data/chunk-*/*.parquet
+data/grab */videos/**/*.mp4
+data/grab */meta/*.json
+data/grab */meta/*.parquet
+data/grab */meta/episodes/

@@ -13,7 +13,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-CREO_POOL_ROOT = Path(__file__).resolve().parents[2]
+CREO_POOL_ROOT = Path(__file__).resolve().parents[2] / "data"
 COLORS = ["green", "red", "white", "yellow"]
 FPS = 50.0
 DT = 1.0 / FPS
