@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.claude/
+.vscode/
+wandb/
+
+# trained checkpoints / extracted archives
+models/
+*.zip
+
+# DAgger data collected by deployment_scripts/deploy_bluerov.py
+dagger_data/
+
+# Recorded episode data: keep the empty grab-*-rod folder skeletons (and
+# their .gitkeep files) checked in, but never commit actual recordings.
+grab */data/chunk-*/*.parquet
+grab */videos/**/*.mp4
+grab */meta/*.json
+grab */meta/*.parquet
+grab */meta/episodes/

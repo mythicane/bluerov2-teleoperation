@@ -1,0 +1,10 @@
+depth:
+  kp: 1210.0
+  ki: 9.0
+  kd: 163.0
+  depth_rate: 0.56
+  depth_min: -0.5
+  depth_max: 147.0
+lateral:
+  gain: 0.415
+  deadband: 0.05
