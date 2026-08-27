@@ -108,6 +108,15 @@ Inspect a single episode's raw contents:
 python inspect_parquet.py "data/grab red rod/data/chunk-000/episode_000000.parquet"
 ```
 
+## Annotating episodes
+
+A companion tool, [bluerov2-annotation-tool](https://github.com/mythicane/bluerov2-annotation-tool),
+exists for reviewing recorded episodes in a browser: watch each episode's
+video, mark it valid/invalid and success/fail, add notes, star ones worth
+revisiting, and get a stats/trajectory dashboard. Point its `DATA_ROOT` at
+this repo's `data/` folder (or wherever you've configured `DATA_ROOT` to
+point) to use it.
+
 ## Model inference / DAgger
 
 `deployment_scripts/deploy_bluerov.py` currently only supports **ACT**
