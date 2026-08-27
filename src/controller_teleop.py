@@ -1084,6 +1084,6 @@ def main(task_name: str) -> None:
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="BlueROV2 Xbox teleop with LeRobot v3 data collection")
-    ap.add_argument("task_name", help='Task label, e.g. "grab_coral". Data saved to D:\\BLUEROV2 data\\creo_pool\\<task_name>\\')
+    ap.add_argument("task_name", help='Task label, e.g. "grab_coral". Data saved to DATA_ROOT/<task_name>/ (see config.py)')
     args = ap.parse_args()
     main(args.task_name)
